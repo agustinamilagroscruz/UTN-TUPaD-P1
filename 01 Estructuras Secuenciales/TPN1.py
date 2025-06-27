@@ -1,0 +1,102 @@
+import math #Ejercicio1 
+'''Crear un programa que imprima por pantalla el mensaje: “Hola Mundo!”.'''
+
+print("Hola Mundo!")
+
+#Ejercicio2
+'''Crear un programa que pida al usuario su nombre e imprima por pantalla un saludo usando
+el nombre ingresado. '''
+
+nombre = input("Ingrese su nombre: ")
+print(f"Hola {nombre}!")
+
+#Ejercicio3 
+''' Crear un programa que pida al usuario su nombre, apellido, edad y lugar de residencia e
+imprima por pantalla una oración con los datos ingresados.'''
+nombre = input("Ingrese su nombre: ")
+apellido = input("Ingrese su apellido: ")
+edad = input("Ingrese su edad: ")
+lugar = input("Ingrese su lugar de residencia: ")
+# Muestra el mensaje con los datos
+print(f"Soy {nombre} {apellido}, tengo {edad} años y vivo en {lugar}.")
+
+#Ejercicio 4
+'''Crear un programa que pida al usuario el radio de un círculo e imprima por pantalla su área y
+su perímetro.'''
+# Solicita el radio del círculo
+radio = float(input("Ingrese el radio del círculo: "))
+# Calcula el área y el perímetro
+area = math.pi * (radio ** 2)
+perimetro = 2 * math.pi * radio
+# Muestra los resultados
+print(f"El área del círculo es: {area:.2f}")
+print(f"El perímetro del círculo es: {perimetro:.2f}")
+
+#Ejercicio5 
+'''Crear un programa que pida al usuario una cantidad de segundos e imprima por pantalla a
+cuántas horas equivale.'''
+segundos = int(input("Ingrese la cantidad de segundos: "))
+# Convierte a horas (1 hora = 3600 segundos)
+horas = segundos / 3600
+# Muestra el resultado
+print(f"{segundos} segundos equivalen a {horas:.2f} horas.")
+
+#Ejercicio6 
+'''Crear un programa que pida al usuario un número e imprima por pantalla la tabla de
+multiplicar de dicho número.'''
+
+numero = int(input("Ingrese un número para ver su tabla de multiplicar: "))
+# Muestra la tabla del 1 al 10
+print(f"Tabla de multiplicar del {numero}:")
+for i in range(1, 11):
+    print(f"{numero} x {i} = {numero * i}")
+
+#Ejercicio7 
+'''Crear un programa que pida al usuario dos números enteros distintos del 0 y muestre por
+pantalla el resultado de sumarlos, dividirlos, multiplicarlos y restarlos.'''
+
+num1 = int(input("Ingrese el primer número (distinto de 0): "))
+num2 = int(input("Ingrese el segundo número (distinto de 0): "))
+# Realiza las operaciones
+suma = num1 + num2
+resta = num1 - num2
+multiplicacion = num1 * num2
+division = num1 / num2  # si num2 es 0, daría error (pero ya lo controlamos)
+# Muestra los resultados
+print(f"Suma: {suma}")
+print(f"Resta: {resta}")
+print(f"Multiplicación: {multiplicacion}")
+print(f"División: {division:.2f}")
+
+#Ejercicio8 
+'''Crear un programa que pida al usuario su altura y su peso e imprima por pantalla su índice
+de masa corporal.'''
+
+peso = float(input("Ingrese su peso en kg: "))
+altura = float(input("Ingrese su altura en metros: "))
+# Calcula el IMC
+imc = peso / (altura ** 2)
+# Muestra el resultado
+print(f"Su índice de masa corporal (IMC) es: {imc:.2f}")
+
+#Ejercicio9
+'''Crear un programa que pida al usuario una temperatura en grados Celsius e imprima por
+pantalla su equivalente en grados Fahrenheit.'''
+
+celsius = float(input("Ingrese la temperatura en grados Celsius: "))
+# Convierte a Fahrenheit
+fahrenheit = (celsius * 9/5) + 32
+# Muestra el resultado
+print(f"{celsius}° Celsius equivalen a {fahrenheit:.2f}° Fahrenheit.")
+
+#Ejercicio10
+'''Crear un programa que pida al usuario 3 números e imprima por pantalla el promedio de
+dichos números.'''
+# Solicita tres números
+num1 = float(input("Ingrese el primer número: "))
+num2 = float(input("Ingrese el segundo número: "))
+num3 = float(input("Ingrese el tercer número: "))
+# Calcula el promedio
+promedio = (num1 + num2 + num3) / 3
+# Muestra el resultado
+print(f"El promedio de los tres números es: {promedio:.2f}")
