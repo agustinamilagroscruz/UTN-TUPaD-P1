@@ -1,0 +1,101 @@
+import math  # Importamos la librería para cálculos con pi
+
+# 1. Función que imprime un mensaje simple
+def imprimir_hola_mundo():
+    print("Hola Mundo!")
+
+    # Llamamos a la función para probar que funcione
+imprimir_hola_mundo()
+
+# 2. Función para saludar a la persona que use el programa
+def saludar_usuario(nombre):
+    return f"Hola {nombre}!"  # Devuelve un saludo con el nombre
+
+# Le pido al usuario que ingrese su nombre
+nombre_usuario = input("\nIngrese su nombre: ")
+print(saludar_usuario(nombre_usuario))
+
+# 3. Función que muestra información personal
+def informacion_personal(nombre, apellido, edad, residencia):
+    print(f"\nSoy {nombre} {apellido}, tengo {edad} años y vivo en {residencia}.")
+
+    # Le pedimos los datos al usuario
+nombre = input("\nIngrese su nombre: ")
+apellido = input("Ingrese su apellido: ")
+edad = input("Ingrese su edad: ")
+residencia = input("Ingrese su lugar de residencia: ")
+
+# Llamamos a la función con los datos ingresados
+informacion_personal(nombre, apellido, edad, residencia)
+
+# 4. Funciones para calcular área y perímetro de un círculo
+def calcular_area_circulo(radio):
+    return math.pi * radio ** 2  # Fórmula del área
+
+def calcular_perimetro_circulo(radio):
+    return 2 * math.pi * radio  # Fórmula del perímetro
+
+# Pedimos el radio al usuario
+radio = float(input("\nIngrese el radio del círculo: "))
+print(f"Área: {calcular_area_circulo(radio):.2f}")
+print(f"Perímetro: {calcular_perimetro_circulo(radio):.2f}")
+
+# 5. Función que convierte segundos a horas
+def segundos_a_horas(segundos):
+    return segundos / 3600
+
+segundos = int(input("\nIngrese la cantidad de segundos: "))
+print(f"{segundos} segundos equivalen a {segundos_a_horas(segundos):.2f} horas.")
+
+# 6. Función que muestra la tabla de multiplicar del número que elija el usuario
+def tabla_multiplicar(numero):
+    print(f"\nTabla del {numero}:")
+    for i in range(1, 11):
+        print(f"{numero} x {i} = {numero * i}")
+
+numero = int(input("\nIngrese un número para ver su tabla de multiplicar: "))
+tabla_multiplicar(numero)
+
+# 7. Función que realiza operaciones básicas con dos números
+def operaciones_basicas(a, b):
+    suma = a + b
+    resta = a - b
+    multiplicacion = a * b
+    division = a / b if b != 0 else "No se puede dividir por cero"
+    return (suma, resta, multiplicacion, division)
+
+a = float(input("\nIngrese el primer número: "))
+b = float(input("Ingrese el segundo número: "))
+resultados = operaciones_basicas(a, b)
+
+print(f"\nSuma: {resultados[0]}")
+print(f"Resta: {resultados[1]}")
+print(f"Multiplicación: {resultados[2]}")
+print(f"División: {resultados[3]}")
+
+# 8. Función que calcula el IMC (índice de masa corporal)
+def calcular_imc(peso, altura):
+    return peso / (altura ** 2)
+
+peso = float(input("\nIngrese su peso en kg: "))
+altura = float(input("Ingrese su altura en metros: "))
+imc = calcular_imc(peso, altura)
+print(f"Su IMC es: {imc:.2f}")
+
+# 9. Función que convierte grados Celsius a Fahrenheit
+def celsius_a_fahrenheit(celsius):
+    return (celsius * 9 / 5) + 32
+
+celsius = float(input("\nIngrese la temperatura en grados Celsius: "))
+fahrenheit = celsius_a_fahrenheit(celsius)
+print(f"{celsius}°C equivalen a {fahrenheit:.2f}°F")
+
+# 10. Función que calcula el promedio de tres números
+def calcular_promedio(a, b, c):
+    return (a + b + c) / 3
+
+n1 = float(input("\nIngrese el primer número: "))
+n2 = float(input("Ingrese el segundo número: "))
+n3 = float(input("Ingrese el tercer número: "))
+promedio = calcular_promedio(n1, n2, n3)
+print(f"El promedio es: {promedio:.2f}")

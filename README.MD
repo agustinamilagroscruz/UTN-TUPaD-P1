@@ -1,0 +1,20 @@
+# 💻 Programación 1  
+**Tecnicatura Universitaria en Programación – A distancia**  
+📍 *Universidad Tecnológica Nacional – Regional Avellaneda*  
+
+## ✨ Estudiante  
+- **Nombre:** Cruz, Agustina Milagros.  
+- **Comisión:** M2025 12 
+
+## 📂 Descripción del Repositorio  
+Este repositorio almacena todos los trabajos prácticos realizados durante la cursada de **Programación 1**.  
+
+📌 **Estructura del repositorio:**  
+- Cada trabajo está organizado en carpetas individuales.  
+- Los archivos de código fuente (`.py`) incluyen comentarios y estructura adecuada.  
+- Se busca mantener un código limpio, ordenado y bien documentado.  
+
+> ⚠️ **Nota:** Este README y los nombres de los archivos de los trabajos prácticos deben ser actualizados con tus datos personales.
+> 
+> ¡Recuerda mantener actualizado tu repositorio!
+
